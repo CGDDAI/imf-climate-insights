@@ -205,3 +205,13 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- Project specific rules: IMF Climate Insights ----------------------------
+
+# Mantener los datasets fuera del control de versiones
+data/raw/
+data/interim/
+data/processed/
+
+# Permitimos versionar solo este descriptor informativo
+!data/README.md
